@@ -1,30 +1,47 @@
-# React + TypeScript + Vite
+# Amun Ahmad - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website.
 
-Currently, two official plugins are available:
+## Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Website Sections
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Project Structure
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+personal-portfolio/
+│
+├── public/                # Static Files
+│
+├── src/
+│   ├── assets/            # Media Assets
+│   ├── main.tsx           # React Connection
+│   ├── index.css          # Global Styles - TailwindCSS Setup
+│   ├── App.tsx            # Root Component
+│   ├── vite-env.d.ts      # Vite TypeScript Environment Declarations
+│
+├── .gitignore             # Ignored Folders / Files in Git
+├── .eslintrc.cjs          # ESLint Configuration
+├── .prettierrc            # Prettier Configuration
+│
+├── index.html             # HTML Template for Vite
+├── package.json           # Project Dependencies and Scripts
+├── package-lock.json      # Dependency Tree Lock File
+├── README.md              # Project Documentation
+│
+├── tailwind.config.js     # TailwindCSS Configuration
+├── tsconfig.app.json      # TypeScript Configuration: Application
+├── tsconfig.json          # TypeScript Configuration: Base
+├── tsconfig.node.json     # TypeScript Configuration: Node-Specific Files
+├── vite.config.ts         # Vite Configuration
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Technology Stack
+
+---
+
+## Let's Connect!
+
+## License
