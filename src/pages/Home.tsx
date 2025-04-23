@@ -83,6 +83,8 @@ function Home() {
           </a>
           <a
             href="./resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-gray-400 hover:text-blue-500 transition"
           >
             Resume
