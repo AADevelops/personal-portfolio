@@ -28,13 +28,7 @@ function Tag(props: {
   };
 
   return (
-    <span
-      className={clsx(
-        baseClassName,
-        preset ? presetClassNames[preset] : "",
-        custom
-      )}
-    >
+    <span className={clsx(baseClassName, presetClassNames[preset], custom)}>
       {label}
     </span>
   );
