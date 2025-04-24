@@ -1,6 +1,9 @@
-import Navbar from "@/components/Navbar.tsx";
-import useTypewriter from "@/hooks/useTypewriter.ts";
-import Tag from "@/components/Tag.tsx";
+import Navbar from "@/components/Navbar";
+import useTypewriter from "@/hooks/useTypewriter";
+import Tag from "@/components/Tag";
+import Button from "@/components/Button";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFileLines } from "@fortawesome/free-regular-svg-icons";
 
 function Home() {
   type LineObject = (string | JSX.Element)[];
@@ -16,7 +19,7 @@ function Home() {
     ["I'm a ", <Tag label="Full-Stack" preset="pink" />, " Developer"],
     [
       "I'm a ",
-      <Tag label="Startup Founder" preset="green" />,
+      <Tag label="Founder" preset="green" />,
       " for a ",
       <Tag label="Stealth Startup" preset="red" />
     ],
@@ -50,55 +53,59 @@ function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="bg-[#111111] font-mono text-white flex flex-col flex-1 items-center justify-center space-y-6">
+
+      <div className="bg-[#111111] font-mono text-white flex flex-col flex-1 items-center justify-center">
         <h1 className="sm:text-4xl font-semibold">
           👋🏼 Hey, I'm <Tag label="Amun Ahmad" preset="blue" />!
         </h1>
-        <div className="automated-text-display text-gray-400 text-lg flex items-center gap-1.5">
-          {automatedTyper.map((lineSection, index) =>
-            typeof lineSection === "string" ? (
-              <span key={index}>{lineSection}</span>
-            ) : (
-              lineSection
-            )
-          )}
+        <div className="automated-text-display text-gray-400 text-lg flex items-center gap-1.5 mt-6">
+          {automatedTyper.map((lineSection, index) => (
+            <span key={index}>{lineSection}</span>
+          ))}
           <span className="animate-blink ml-0.5 text-2xl">|</span>
         </div>
 
-        <h3>
-          <Tag
-            label="- Currently Seeking Fall 2025 Internship -"
-            preset="yellow"
-          />
-        </h3>
+        <div className="w-8 h-[1px] bg-gray-500 rounded-full my-8" />
+
+        <Tag
+          label="- Currently Seeking Fall 2025 Internship -"
+          preset="yellow"
+          custom="mb-5"
+        />
 
         <div className="space-x-4">
-          <a
-            href="https://linkedin.com/in/amunahmad"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-500 transition"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="./resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-500 transition"
-          >
-            Resume
-          </a>
-          <a
-            href="https://github.com/AADevelops"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-500 transition"
-          >
-            GitHub
-          </a>
+          <Button
+            label="LinkedIn"
+            icon={faLinkedin}
+            backgroundColor="bg-[#0077B5]"
+            textColor="text-white"
+            destination="https://linkedin.com/in/amunahmad"
+          />
+          <Button
+            label="Resume"
+            icon={faFileLines}
+            backgroundColor="bg-teal-600"
+            textColor="text-white"
+            destination="/resume"
+          />
+          <Button
+            label="GitHub"
+            icon={faGithub}
+            backgroundColor="bg-[#2B3137]"
+            textColor="text-white"
+            destination="https://github.com/AADevelops"
+          />
         </div>
       </div>
+
+      <footer className="bg-[#111111] text-sm text-center py-6">
+        <div className="text-gray-400 mt-4 flex justify-center items-center space-x-1">
+          <p>&copy;</p>
+          <p className="font-mono">
+            {new Date().getFullYear()} Amun Ahmad. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

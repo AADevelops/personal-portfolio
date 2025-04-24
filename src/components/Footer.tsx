@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faFileLines, faEnvelope } from "@fortawesome/free-regular-svg-icons";
@@ -14,9 +15,9 @@ function Footer() {
         >
           <FontAwesomeIcon icon={faLinkedin} size="3x" />
         </a>
-        <a href="/resume.pdf" className="hover:text-blue-500 transition">
+        <Link to="/resume" className="hover:text-blue-500 transition">
           <FontAwesomeIcon icon={faFileLines} size="3x" />
-        </a>
+        </Link>
         <a
           href="https://github.com/AADevelops"
           target="_blank"
@@ -32,9 +33,13 @@ function Footer() {
           <FontAwesomeIcon icon={faEnvelope} size="3x" />
         </a>
       </div>
-      <p className="text-gray-400 mt-4">
-        &copy; {new Date().getFullYear()} Amun Ahmad. All rights reserved.
-      </p>
+
+      <div className="text-gray-400 mt-4 flex justify-center items-center space-x-1">
+        <p>&copy;</p>
+        <p className="font-mono">
+          {new Date().getFullYear()} Amun Ahmad. All rights reserved.
+        </p>
+      </div>
     </footer>
   );
 }
