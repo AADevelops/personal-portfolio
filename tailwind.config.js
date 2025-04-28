@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ["'JetBrains Mono'", "monospace"]
+      },
       keyframes: {
         blink: {
           "0%, 100%": { opacity: "1" },
