@@ -17,14 +17,14 @@ function Tag(props: {
 
   const baseClassName = "rounded-lg font-mono px-1.5 py-0.5 inline-flex";
   const presetClassNames = {
-    gray: "bg-gray-600/30 text-gray-400",
-    red: "bg-red-900/30 text-red-400",
-    green: "bg-green-900/30 text-green-400",
-    yellow: "bg-amber-900/30 text-amber-400",
-    orange: "bg-orange-900/30 text-orange-400",
-    blue: "bg-blue-900/30 text-blue-400",
-    purple: "bg-purple-900/30 text-purple-400",
-    pink: "bg-pink-900/30 text-pink-400"
+    gray: "bg-gray-700/45 text-gray-400",
+    red: "bg-red-700/45 text-red-400",
+    green: "bg-green-700/45 text-green-400",
+    yellow: "bg-yellow-700/45 text-yellow-500",
+    orange: "bg-orange-700/45 text-orange-400",
+    blue: "bg-blue-700/45 text-blue-400",
+    purple: "bg-purple-700/45 text-purple-400",
+    pink: "bg-pink-700/45 text-pink-400"
   };
 
   return (
