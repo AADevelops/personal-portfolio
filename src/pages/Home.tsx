@@ -12,7 +12,6 @@ function Home() {
     [
       "Studying Computer Science & Business @ ",
       <Tag label="Wilfrid" preset="purple" />,
-      " ",
       <Tag label="Laurier" preset="yellow" />,
       " University"
     ],
@@ -20,7 +19,7 @@ function Home() {
     [
       "I'm a ",
       <Tag label="Founder" preset="green" />,
-      " for a ",
+      " of a ",
       <Tag label="Stealth Startup" preset="red" />
     ],
     [
@@ -39,7 +38,7 @@ function Home() {
       <u>
         <strong>Richmond Hill</strong>
       </u>,
-      ", Ontario, Canada"
+      ", Ontario, Canada 🇨🇦"
     ]
   ];
 
@@ -58,7 +57,7 @@ function Home() {
         <h1 className="sm:text-4xl font-semibold">
           👋🏼 Hey, I'm <Tag label="Amun Ahmad" preset="blue" />!
         </h1>
-        <div className="automated-text-display text-gray-400 text-lg flex items-center gap-1.5 mt-6">
+        <div className="automated-text-display text-[#B2B2B2] text-lg flex items-center gap-1.5 mt-6">
           {automatedTyper.map((lineSection, index) => (
             <span key={index}>{lineSection}</span>
           ))}
@@ -99,7 +98,7 @@ function Home() {
       </div>
 
       <footer className="bg-[#111111] text-sm text-center py-6">
-        <div className="text-gray-400 mt-4 flex justify-center items-center space-x-1">
+        <div className="text-[#B2B2B2] mt-4 flex justify-center items-center space-x-1">
           <p>&copy;</p>
           <p className="font-mono">
             {new Date().getFullYear()} Amun Ahmad. All rights reserved.
