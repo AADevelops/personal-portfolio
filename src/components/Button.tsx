@@ -17,7 +17,7 @@ function Button({
   textColor = "text-gray-400",
   destination
 }: ButtonProps) {
-  const baseClassName = `inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition duration-200 ${backgroundColor} ${textColor}`;
+  const baseClassName = `inline-flex justify-center items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition duration-200 ${backgroundColor} ${textColor}`;
 
   const content = (
     <>
