@@ -12,6 +12,7 @@ function Home() {
     [
       "Studying Computer Science & Business @ ",
       <Tag label="Wilfrid" preset="purple" />,
+      " ",
       <Tag label="Laurier" preset="yellow" />,
       " University"
     ],
@@ -54,25 +55,31 @@ function Home() {
       <Navbar />
 
       <div className="bg-[#111111] font-mono text-white flex flex-col flex-1 items-center justify-center">
-        <h1 className="sm:text-4xl font-semibold">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
           👋🏼 Hey, I'm <Tag label="Amun Ahmad" preset="blue" />!
         </h1>
-        <div className="automated-text-display text-[#B2B2B2] text-lg flex items-center gap-1.5 mt-6">
-          {automatedTyper.map((lineSection, index) => (
-            <span key={index}>{lineSection}</span>
-          ))}
+
+        <div className="automated-text-display text-[#B2B2B2] text-center text-base sm:text-lg md:text-xl gap-1.5 mt-4 sm:mt-6 mx-auto">
+          {automatedTyper}
           <span className="animate-blink ml-0.5 text-2xl">|</span>
         </div>
 
         <div className="w-8 h-[1px] bg-gray-500 rounded-full my-8" />
 
+        {/* OG: mb-10 */}
         <Tag
           label="- Currently Seeking Fall 2025 Internship -"
           preset="yellow"
-          custom="mb-5"
+          custom="mb-5 text-[15px] sm:mb-5 sm:text-lg"
         />
 
-        <div className="space-x-4">
+        <Tag
+          label="* WARNING: Website NOT complete. *"
+          preset="red"
+          custom="mb-10 text-[15px] sm:mb-5 sm:text-lg"
+        />
+
+        <div className="flex flex-col space-y-6 sm:flex-row sm:space-x-4 sm:space-y-0">
           <Button
             label="LinkedIn"
             icon={faLinkedin}
