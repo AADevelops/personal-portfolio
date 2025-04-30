@@ -6,7 +6,7 @@ import { faFileLines, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 function Footer() {
   return (
     <footer className="bg-[#111111] text-[#B2B2B2] text-sm text-center py-6">
-      <div className="flex flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-6">
+      <div className="flex flex-row justify-center text-xs space-x-4 sm:space-y-0 sm:space-x-6">
         <a
           href="https://linkedin.com/in/amunahmad"
           target="_blank"
