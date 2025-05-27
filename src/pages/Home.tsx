@@ -18,9 +18,9 @@ function Home() {
     ],
     ["I'm a ", <Tag label="Full-Stack" preset="pink" />, " Developer"],
     [
-      "I'm a ",
+      "I'm the ",
       <Tag label="Founder" preset="green" />,
-      " of a ",
+      " of a Business Intelligence & Data Analytics ",
       <Tag label="Stealth Startup" preset="red" />
     ],
     [
@@ -29,7 +29,9 @@ function Home() {
       " & ",
       <Tag label="Tauri" preset="blue" />
     ],
-    ["Interested in Entrepreneurship, AI/ML, Cybersecurity & Finance"],
+    [
+      "Interested in Entrepreneurship, AI/ML, Big Data, Cybersecurity & Finance"
+    ],
     [
       "Based in ",
       <u>
@@ -39,7 +41,7 @@ function Home() {
       <u>
         <strong>Richmond Hill</strong>
       </u>,
-      ", Ontario, Canada 🇨🇦"
+      ", Ontario, 🇨🇦"
     ]
   ];
 
@@ -51,7 +53,7 @@ function Home() {
   });
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen overflow-hidden flex flex-col">
       <Navbar />
 
       <div className="bg-[#111111] font-mono text-white flex flex-col flex-1 items-center justify-center">
