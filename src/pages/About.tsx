@@ -1,10 +1,10 @@
-import Navbar from "@/components/Navbar.tsx";
-import Tag from "@/components/Tag.tsx";
-import Footer from "@/components/Footer.tsx";
+import Navbar from "@/components/Navbar";
+import Tag from "@/components/Tag";
+import Footer from "@/components/Footer";
 
 function About() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen overflow-hidden flex flex-col">
       <Navbar />
       <div className="bg-[#111111] font-mono text-white flex flex-col flex-1 items-center justify-center space-y-6">
         <h1 className="sm:text-4xl font-semibold">

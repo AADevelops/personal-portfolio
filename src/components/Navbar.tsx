@@ -32,12 +32,12 @@ function Navbar() {
           >
             Experience
           </Link>
-          <Link
+          {/* <Link
             to="/contact"
             className="py-2 px-3 hover:text-[#31A0F5] transition"
           >
             Contact
-          </Link>
+          </Link> */}
         </nav>
       </div>
     </header>

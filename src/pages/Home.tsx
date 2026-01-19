@@ -20,14 +20,15 @@ function Home() {
     [
       "I'm the ",
       <Tag label="Founder" preset="green" />,
-      " of a Business Intelligence & Data Analytics ",
-      <Tag label="Stealth Startup" preset="red" />
+      " of a Business Intelligence & Data Analytics startup, ",
+      <Tag label="DataFloat" preset="blue" />
     ],
     [
-      "Currently Learning Desktop Application Development with ",
-      <Tag label="Rust" preset="orange" />,
+      "Currently Learning ",
+      <Tag label="AI Agent" preset="orange" />,
       " & ",
-      <Tag label="Tauri" preset="blue" />
+      <Tag label="API" preset="blue" />,
+      " Development"
     ],
     [
       "Interested in Entrepreneurship, AI/ML, Big Data, Cybersecurity & Finance"
@@ -70,16 +71,16 @@ function Home() {
 
         {/* OG: mb-10 */}
         <Tag
-          label="- Currently Seeking Fall 2025 Internship -"
+          label="- Currently Seeking Summer 2026 Internship -"
           preset="yellow"
           custom="mb-5 text-[15px] sm:mb-5 sm:text-lg"
         />
 
-        <Tag
+        {/* <Tag
           label="* WARNING: Website NOT complete. *"
           preset="red"
           custom="mb-10 text-[15px] sm:mb-5 sm:text-lg"
-        />
+        /> */}
 
         <div className="flex flex-col space-y-6 sm:flex-row sm:space-x-4 sm:space-y-0">
           <Button

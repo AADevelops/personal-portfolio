@@ -1,6 +1,6 @@
-import Navbar from "@/components/Navbar.tsx";
-import Tag from "@/components/Tag.tsx";
-import Footer from "@/components/Footer.tsx";
+import Navbar from "@/components/Navbar";
+import Tag from "@/components/Tag";
+import Footer from "@/components/Footer";
 
 function Contact() {
   return (
