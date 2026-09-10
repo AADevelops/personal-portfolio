@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { cloneElement, useEffect, useState } from "react";
 
 type LineObject = (string | JSX.Element)[];
 type MixedObject = string | JSX.Element;
@@ -87,7 +87,7 @@ function useTypewriter(
         currentText = "";
       }
 
-      renderedLine.push(item);
+      renderedLine.push(cloneElement(item, { key: i })); // Keyed: Rendered as an Array Child
     }
   }
 

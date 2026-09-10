@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* Baseline for anything that doesn't set its own size (e.g. the navbar links),
+     so it scales with the type ramp instead of sitting at the browser default. */
+  body {
+    @apply text-base;
+  }
+}

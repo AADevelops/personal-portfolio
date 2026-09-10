@@ -40,7 +40,9 @@ function PDFViewer({ url }: PDFViewerProps) {
 
       try {
         await renderTaskRef.current.promise;
-      } catch {}
+      } catch {
+        // Render cancelled by a url change or unmount, nothing to recover.
+      }
     };
 
     render();
