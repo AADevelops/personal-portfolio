@@ -16,12 +16,12 @@ export const experiences: Experience[] = [
     logo: "/logos/datafloat.png",
     role: "Co-Founder",
     date: "May 2025 - Present",
-    location: "Kitchener, ON",
+    location: "Waterloo, ON",
     description: [
-      "Built and shipped a production financial intelligence platform with the founding team using Next.js, React, TypeScript, Prisma, and PostgreSQL, taking it from prototype to a live pilot deployment running on real financial data",
-      "Engineered an automated pipeline that syncs third-party accounting and CRM data into isolated per-tenant Postgres schemas, handling OAuth 2.0 server-side and layering reversible transformations that leave raw source data untouched",
-      "Designed a Claude-powered agent layer that lets users run data operations through natural language, with configurable retry and timeout handling so transient model failures stay invisible to the user",
-      "Implemented multi-tenant organizations and projects with role-based access control, email verification, password reset, and invite flows on BetterAuth, with server-side route protection and automated test coverage across the platform",
+      "Built and shipped a production financial intelligence platform with the founding team using Next.js, React, TypeScript, Prisma, and PostgreSQL, taking it from prototype to a live pilot deployment on real financial data",
+      "Engineered an automated pipeline that syncs third-party accounting and CRM data into isolated per-tenant Postgres schemas, handling OAuth 2.0 and layering reversible transformations that leave source data untouched",
+      "Designed a multi-agent, Claude-powered system with robust error handling, configurable retires and timeouts across agents, that lets users run data operations through natural language without disruption from model failures",
+      "Implemented multi-tenant organizations and projects with role-based access control, email verification, password reset, and invite flows on BetterAuth, with server-side route protection and automated test coverage platform-wide",
       "Conducted 100+ discovery interviews and analyzed secondary data from industry databases to validate product-market fit, using SWOT analysis and the Lean methodology to guide strategic pivots"
     ]
   },
