@@ -15,6 +15,7 @@ export const experiences: Experience[] = [
     company: "DataFloat",
     logo: "/logos/datafloat.png",
     role: "Co-Founder",
+    type: "Self Employed",
     date: "May 2025 - Present",
     location: "Waterloo, ON",
     description: [
@@ -30,6 +31,7 @@ export const experiences: Experience[] = [
     company: "Wilfrid Laurier University",
     logo: "/logos/wlu.jpeg",
     role: "Instructional Assistant",
+    type: "Contract Part-Time",
     date: "Jan. 2026 - Apr. 2026",
     location: "Waterloo, ON",
     description: [
@@ -43,6 +45,7 @@ export const experiences: Experience[] = [
     company: "Laurier Cybersecurity Club",
     logo: "/logos/cybersecurity-club.jpeg",
     role: "Executive Vice President",
+    type: "Extracurricular",
     date: "Sep. 2024 - Apr. 2026",
     location: "Waterloo, ON",
     description: [

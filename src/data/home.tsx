@@ -11,12 +11,12 @@ export const typewriterLines: LineObject[] = [
     " University"
   ],
   ["I'm a ", <Tag label="Full-Stack" preset="pink" />, " Developer"],
-  [
-    "I'm a ",
-    <Tag label="Co-Founder" preset="green" />,
-    " of a Financial Intelligence startup: ",
-    <Tag label="DataFloat" preset="blue" />
-  ],
+  // [
+  //   "I'm a ",
+  //   <Tag label="Co-Founder" preset="green" />,
+  //   " of a Financial Intelligence startup: ",
+  //   <Tag label="DataFloat" preset="blue" />
+  // ],
   [
     "Currently Learning ",
     <Tag label="AI Agent" preset="orange" />,
